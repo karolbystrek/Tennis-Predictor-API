@@ -2,15 +2,15 @@ import os
 
 class Config:
     """Base configuration settings. Reads values from environment variables."""
-    SECRET_KEY = os.getenv('SECRET_KEY', 'a-default-secret-dev-secret-key')
+    SECRET_KEY = os.getenv('SECRET_KEY')
     API_KEY = os.getenv('PREDICTION_API_KEY')
-    DB_HOST = os.getenv('DB_HOST', 'localhost')
-    DB_PORT = int(os.getenv('DB_PORT', 3306))
+    DB_HOST = os.getenv('DB_HOST')
+    DB_PORT = int(os.getenv('DB_PORT'))
     DB_USER = os.getenv('DB_USER')
     DB_PASSWORD = os.getenv('DB_PASSWORD')
-    DB_NAME = os.getenv('DB_NAME', 'tennis')
+    DB_NAME = os.getenv('DB_NAME')
 
-    MODEL_PATH = os.getenv('MODEL_PATH', 'data/models/xgboost_tennis_model.ubj')
+    MODEL_PATH = os.getenv('MODEL_PATH')
 
     LOG_LEVEL = os.getenv('LOG_LEVEL', 'INFO').upper()
 
