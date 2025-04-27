@@ -172,8 +172,7 @@ The active configuration is selected based on the `APP_ENV` environment variable
 ├── data/                 # Data files (e.g., models)
 │   └── models/
 │       └── xgboost_tennis_model.ubj # Example model file
-├── tests/                # Unit and integration tests (Optional)
-├── .env                  # Local environment variables (DO NOT COMMIT)
+├── .env                  # Local environment variables
 ├── .gitignore            # Git ignore rules
 ├── LICENSE               # Project license file
 ├── README.md             # This file
